@@ -1,0 +1,33 @@
+header{
+	min-width: 1440px;
+}
+.container{
+	min-width: 1212px;
+	width: 1212px;
+	margin: 0 auto;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*È¥µôinputµÈ¾Û½¹Ê±µÄÀ¶É«±ß¿ò*/
+ul,li { list-style:none; }
+
+select, input { vertical-align:middle;}
+
+textarea { resize:none; } /*·ÀÖ¹ÍÏ¶¯*/
+img {border:0; vertical-align:middle; }  
+
+table { border-collapse:collapse; }
+a{
+	text-decoration: none;
+	color: black;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    height: 0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+    zoom:1;
+}
+
+

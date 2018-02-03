@@ -1,0 +1,19 @@
+$side:#000000;
+$boxH:100%;
+$boxW:100%;
+$mainColor:#FC7309;
+$backColor:#FEFEFE;
+%b{
+    border: 1px solid $mainColor;
+}
+
+%tanxingX{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+%tanxingY{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}

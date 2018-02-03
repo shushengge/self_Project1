@@ -1,0 +1,423 @@
+// 导入scss文件
+@import 'var';
+.box {
+    height: $boxH;
+    width: $boxW;
+        @extend %tanxingX;
+    .side {
+        position: fixed;
+        height: 100%;
+        width: 40px;
+        right: 0;
+        top: 0;
+        background-color: $side;
+    }
+
+    //头部
+    header {
+        height: 120px;
+        .header_t {
+            background-color: #F6F6F6;
+            width: 100%;
+            .header_tl {
+                float: left;
+                height: 30px;
+                width: 240px;
+                line-height: 30px;
+                .htl1 {
+                    color: #BABAC7;
+                    font-size: 10px;
+
+                }
+                .htl2 {
+                    padding-left: 20px;
+                    color: #323232;
+                    font-size: 14px;
+                    i {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+            .header_tr {
+                float: right;
+                width: 440px;
+
+                ul {
+                    li {
+                        float: right;
+                        height: 30px;
+                        line-height: 30px;
+                        a {
+                            height: 13px;
+                            width: 100px;
+                            border-right: 1px solid #873287;
+                            font-size: 13px;
+                            padding-right: 10px;
+                            padding-left: 30px;
+                            color: #323232;
+                        }
+
+                    }
+                    .guanzhu {
+                        a {
+                            border: none;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .header_b {
+            background-color: #DFDFDF;
+            padding: 10px 0;
+            .logo {
+                float: left;
+            }
+            .header_b_c {
+                float: left;
+                width: 570px;
+                height: 40px;
+                margin: 19px 0 19px 20px;
+                .hbc1 {
+                    height: 32px;
+                    position: relative;
+                    margin-bottom: 10px;
+                    input {
+                        height: 30px;
+                        @extend %b;
+                        width: 490px;
+                        padding-left: 10px;
+                        display: inline-block;
+                    }
+
+                    button {
+                        position: absolute;
+                        width: 70px;
+                        height: 32px;
+                        background-color: $mainColor;
+                        font-size: 18px;
+                        @extend %b;
+                        right: 0;
+                        top: 0;
+                        a{
+                        color: $backColor;
+                            
+                        }
+                    }
+                }
+
+                ul {
+                    width: 300px;
+                    li {
+                        float: left;
+                        height: 20px;
+                        width: 60px;
+                        font-size: 12px;
+                        a {
+                            height: 12px;
+                            width: 60px;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+
+            .top_Car {
+                position: relative;
+                float: right;
+                height: 40px;
+                width: 200px;
+                @extend %b;
+                margin: 20px 0;
+                background-color: $backColor;
+                //              border-bottom: none;
+
+                span {
+                    display: inline-block;
+                    color: $mainColor;
+                    position: absolute;
+                    right: 30px;
+                    font-size: 14px;
+                    top: 10px;
+                }
+
+                .top_hide {
+                    //              height: 200px;
+                    width: 400px;
+                    @extend %b;
+                    background-color: $backColor;
+                    position: absolute;
+                    top: 39px;
+                    right: -1px;
+                    @extend %tanxingX;
+                    display: none;
+                    p {
+                        font-weight: 900;
+                        padding: 10px 0 10px 10px;
+                        font-size: 13px;
+                    }
+
+                    .carBox {
+                        min-height: 120px;
+                    }
+
+                    .top_hide_b {
+                        height: 40px;
+                        background-color: lightgrey;
+                    }
+                }
+            }
+
+        }
+    
+        .banner{
+            height: 480px;
+            width: 150px;
+            background: $backColor;
+            left: 0;
+//          @extend %b;
+            
+            h4{
+                height: 40px;
+                background: $mainColor;
+                text-align: center;
+                line-height: 40px;
+                color: $backColor;
+            }
+            .banner_b{
+                ul{
+                    height: 440px;
+                    padding-top: 10px;
+                    text-align: center;
+                    background: #F9F9F9;
+                    li{
+                       height:50px ;
+                       margin-top: 5px;
+                       padding: 0 40px; 
+                       background: $backColor;
+                       line-height: 50px;
+                    }
+                }
+            }
+        }           
+    }
+
+
+
+    //轮播
+    nav{
+        width: 100%;
+        height: 480px;
+        z-index: -1;
+        .container{
+            position: relative;
+            width: 1920px;
+            .lunbo{
+                width: 100%;
+                height: 480px;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    //底部
+    footer {
+//      height: 840px;
+        .footer_t {
+            height: 120px;
+            width: 100%;
+            background-color: $mainColor;
+
+            ul {
+                @extend %tanxingY;
+                width: 1212px;
+                li {
+                    height: 120px;
+                    width: 242px;
+                    float: left;
+                    background: url("../img/footer_t1.png") left no-repeat;
+                    line-height: 120px;
+                    padding-left: 80px;
+                    color: $backColor;
+                    h4 {
+                        //                      font-size: 1px;
+                        height: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .footer_b {
+//          height: 600px;
+            .footer_b_t {
+                height: 420px;
+                border-bottom: 1px solid lightslategray;
+                padding: 20px 10px;
+
+                .footer_b_t_l {
+
+                    width: 890px;
+                    float: left;
+                    .footer_b_t_lt {
+                        width: 880px;
+                        height: 160px;
+                        border: 1px solid lightgrey;
+                        padding: 10px 0 10px 10px;
+                        .footer_b_t_lt1 {
+                            float: left;
+                            width: 220px;
+                            height: 140px;
+                            //                          @extend %b;
+                            margin-right: 10px;
+
+                            div {
+                                padding: 5px 0 0;
+                            }
+                        }
+                        .footer_b_t_lt2 {
+                            float: left;
+                            width: 640px;
+                            height: 140px;
+                            @extend %tanxingX;
+                            div {
+                                p {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                    .footer_b_t_lb {
+                        height: 200px;
+                        @extend %tanxingY;
+                        padding: 30px;
+                        ul {
+                            float: left;
+                            padding-top: 20px;
+                            font-size: 14px;
+                            li {
+                                padding-top: 10px;
+                                h5 {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer_b_t_r {
+                    float: right;
+                    width: 280px;
+                    height: 430px;
+                    //                  padding: 10px;
+                    @extend %tanxingX;
+
+                    .footer_b_t_r1 {
+                        div {
+                            a {
+                                display: block;
+                                height: 50px;
+                                width: 280px;
+                                background: url("../img/index-commonweal.jpg") no-repeat;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                    .footer_b_t_r2 {
+                        height: 150px;
+                        @extend %tanxingY;
+                        text-align: center;
+                        div {
+                            h3 {
+                                margin-bottom: 10px;
+                            }
+                            div {
+                                float: left;
+                                height: 100px;
+                                width: 100px;
+                                background: url("../img/index-bottom-ygw-wx.jpg");
+                            }
+                        }
+                    }
+
+                }
+            }
+            .footer_b_b {
+                padding: 20px 0 0 0;
+                
+                text-align: center;
+                ul {
+                    height: 20px;
+                    width: 700px;
+                    margin: 0 auto 20px;
+                    li {
+                        width: 84px;
+                        height: 20px;
+                        float: left;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 20px;
+                        a {
+                            height: 13px;
+                            padding-right: 17px;
+                            border-right: 1px solid black;
+                        }
+                        .footer_b_b_last {
+                            border-right: none;
+                        }
+                    }
+
+                }
+
+                .bottom_photo {
+                    width: 850px;
+                    height: 50px;
+                    margin: 0 auto;
+                    div {
+                        float: left;
+                        height: 50px;
+                        width: 125px;
+                        margin-left: 5px;
+                        img {
+                            width: 125px;
+                        }
+                    }
+                    .gongjian {
+                        width: 55px;
+                        img {
+
+                            width: 55px;
+                            height: 50px;
+
+                        }
+                    }
+                }
+                p {
+                    margin: 10px;
+
+                    color: lightgrey;
+                    font-size: 13px;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+}

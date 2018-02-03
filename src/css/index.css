@@ -1,0 +1,423 @@
+.box header .header_b .header_b_c .hbc1 input, .box header .header_b .header_b_c .hbc1 button, .box header .header_b .top_Car, .box header .header_b .top_Car .top_hide {
+  border: 1px solid #FC7309;
+}
+
+.box, .box header .header_b .top_Car .top_hide, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt2, .box footer .footer_b .footer_b_t .footer_b_t_r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box footer .footer_t ul, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb, .box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+}
+
+.box .side {
+  position: fixed;
+  height: 100%;
+  width: 40px;
+  right: 0;
+  top: 0;
+  background-color: #000000;
+}
+
+.box header {
+  height: 120px;
+}
+
+.box header .header_t {
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+.box header .header_t .header_tl {
+  float: left;
+  height: 30px;
+  width: 240px;
+  line-height: 30px;
+}
+
+.box header .header_t .header_tl .htl1 {
+  color: #BABAC7;
+  font-size: 10px;
+}
+
+.box header .header_t .header_tl .htl2 {
+  padding-left: 20px;
+  color: #323232;
+  font-size: 14px;
+}
+
+.box header .header_t .header_tl .htl2 i {
+  height: 20px;
+  width: 20px;
+}
+
+.box header .header_t .header_tr {
+  float: right;
+  width: 440px;
+}
+
+.box header .header_t .header_tr ul li {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+
+.box header .header_t .header_tr ul li a {
+  height: 13px;
+  width: 100px;
+  border-right: 1px solid #873287;
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 30px;
+  color: #323232;
+}
+
+.box header .header_t .header_tr ul .guanzhu a {
+  border: none;
+}
+
+.box header .header_b {
+  background-color: #DFDFDF;
+  padding: 10px 0;
+}
+
+.box header .header_b .logo {
+  float: left;
+}
+
+.box header .header_b .header_b_c {
+  float: left;
+  width: 570px;
+  height: 40px;
+  margin: 19px 0 19px 20px;
+}
+
+.box header .header_b .header_b_c .hbc1 {
+  height: 32px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.box header .header_b .header_b_c .hbc1 input {
+  height: 30px;
+  width: 490px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.box header .header_b .header_b_c .hbc1 button {
+  position: absolute;
+  width: 70px;
+  height: 32px;
+  background-color: #FC7309;
+  font-size: 18px;
+  right: 0;
+  top: 0;
+}
+
+.box header .header_b .header_b_c .hbc1 button a {
+  color: #FEFEFE;
+}
+
+.box header .header_b .header_b_c ul {
+  width: 300px;
+}
+
+.box header .header_b .header_b_c ul li {
+  float: left;
+  height: 20px;
+  width: 60px;
+  font-size: 12px;
+}
+
+.box header .header_b .header_b_c ul li a {
+  height: 12px;
+  width: 60px;
+  color: #FC7309;
+}
+
+.box header .header_b .top_Car {
+  position: relative;
+  float: right;
+  height: 40px;
+  width: 200px;
+  margin: 20px 0;
+  background-color: #FEFEFE;
+}
+
+.box header .header_b .top_Car span {
+  display: inline-block;
+  color: #FC7309;
+  position: absolute;
+  right: 30px;
+  font-size: 14px;
+  top: 10px;
+}
+
+.box header .header_b .top_Car .top_hide {
+  width: 400px;
+  background-color: #FEFEFE;
+  position: absolute;
+  top: 39px;
+  right: -1px;
+  display: none;
+}
+
+.box header .header_b .top_Car .top_hide p {
+  font-weight: 900;
+  padding: 10px 0 10px 10px;
+  font-size: 13px;
+}
+
+.box header .header_b .top_Car .top_hide .carBox {
+  min-height: 120px;
+}
+
+.box header .header_b .top_Car .top_hide .top_hide_b {
+  height: 40px;
+  background-color: lightgrey;
+}
+
+.box header .banner {
+  height: 480px;
+  width: 150px;
+  background: #FEFEFE;
+  left: 0;
+}
+
+.box header .banner h4 {
+  height: 40px;
+  background: #FC7309;
+  text-align: center;
+  line-height: 40px;
+  color: #FEFEFE;
+}
+
+.box header .banner .banner_b ul {
+  height: 440px;
+  padding-top: 10px;
+  text-align: center;
+  background: #F9F9F9;
+}
+
+.box header .banner .banner_b ul li {
+  height: 50px;
+  margin-top: 5px;
+  padding: 0 40px;
+  background: #FEFEFE;
+  line-height: 50px;
+}
+
+.box nav {
+  width: 100%;
+  height: 480px;
+  z-index: -1;
+}
+
+.box nav .container {
+  position: relative;
+  width: 1920px;
+}
+
+.box nav .container .lunbo {
+  width: 100%;
+  height: 480px;
+}
+
+.box nav .container .lunbo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box footer .footer_t {
+  height: 120px;
+  width: 100%;
+  background-color: #FC7309;
+}
+
+.box footer .footer_t ul {
+  width: 1212px;
+}
+
+.box footer .footer_t ul li {
+  height: 120px;
+  width: 242px;
+  float: left;
+  background: url("../img/footer_t1.png") left no-repeat;
+  line-height: 120px;
+  padding-left: 80px;
+  color: #FEFEFE;
+}
+
+.box footer .footer_t ul li h4 {
+  height: 20px;
+}
+
+.box footer .footer_t ul li p {
+  font-size: 12px;
+  height: 20px;
+}
+
+.box footer .footer_b .footer_b_t {
+  height: 420px;
+  border-bottom: 1px solid lightslategray;
+  padding: 20px 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l {
+  width: 890px;
+  float: left;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt {
+  width: 880px;
+  height: 160px;
+  border: 1px solid lightgrey;
+  padding: 10px 0 10px 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt1 {
+  float: left;
+  width: 220px;
+  height: 140px;
+  margin-right: 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt1 div {
+  padding: 5px 0 0;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt2 {
+  float: left;
+  width: 640px;
+  height: 140px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt2 div p {
+  font-size: 12px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb {
+  height: 200px;
+  padding: 30px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb ul {
+  float: left;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb ul li {
+  padding-top: 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb ul li h5 {
+  font-size: 16px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_r {
+  float: right;
+  width: 280px;
+  height: 430px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r1 div a {
+  display: block;
+  height: 50px;
+  width: 280px;
+  background: url("../img/index-commonweal.jpg") no-repeat;
+  padding-top: 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 {
+  height: 150px;
+  text-align: center;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 div h3 {
+  margin-bottom: 10px;
+}
+
+.box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 div div {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background: url("../img/index-bottom-ygw-wx.jpg");
+}
+
+.box footer .footer_b .footer_b_b {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.box footer .footer_b .footer_b_b ul {
+  height: 20px;
+  width: 700px;
+  margin: 0 auto 20px;
+}
+
+.box footer .footer_b .footer_b_b ul li {
+  width: 84px;
+  height: 20px;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.box footer .footer_b .footer_b_b ul li a {
+  height: 13px;
+  padding-right: 17px;
+  border-right: 1px solid black;
+}
+
+.box footer .footer_b .footer_b_b ul li .footer_b_b_last {
+  border-right: none;
+}
+
+.box footer .footer_b .footer_b_b .bottom_photo {
+  width: 850px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.box footer .footer_b .footer_b_b .bottom_photo div {
+  float: left;
+  height: 50px;
+  width: 125px;
+  margin-left: 5px;
+}
+
+.box footer .footer_b .footer_b_b .bottom_photo div img {
+  width: 125px;
+}
+
+.box footer .footer_b .footer_b_b .bottom_photo .gongjian {
+  width: 55px;
+}
+
+.box footer .footer_b .footer_b_b .bottom_photo .gongjian img {
+  width: 55px;
+  height: 50px;
+}
+
+.box footer .footer_b .footer_b_b p {
+  margin: 10px;
+  color: lightgrey;
+  font-size: 13px;
+}
+
+.box footer .footer_b .footer_b_b p span {
+  color: black;
+}
