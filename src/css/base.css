@@ -12,13 +12,16 @@ ul,li { list-style:none; }
 
 select, input { vertical-align:middle;}
 
-textarea { resize:none; } /*·ÀÖ¹ÍÏ¶¯*/
+textarea { resize:none; } 
 img {border:0; vertical-align:middle; }  
 
 table { border-collapse:collapse; }
 a{
 	text-decoration: none;
 	color: black;
+}
+h1,h2,h3,h4,p{
+	margin: 0;
 }
 .clearfix:after{
     content:"";

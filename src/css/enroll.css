@@ -1,4 +1,127 @@
+body .zhuce i {
+  border: 1px solid #FC7309;
+}
+
 body {
   background: url(../img/admin-re-bg.jpg);
   background-size: 100% 100%;
+}
+
+body .zhuce {
+  height: 470px;
+  width: 345px;
+  background: #FEFEFE;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 20px 35px;
+  transform: translate(-50%, -50%);
+}
+
+body .zhuce h1 {
+  margin: 0;
+}
+
+body .zhuce h1 img {
+  height: 50px;
+  width: 130px;
+}
+
+body .zhuce .firstP {
+  color: black;
+  font-size: 25px;
+  position: relative;
+  line-height: 40px;
+  height: 40px;
+}
+
+body .zhuce .firstP span {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body .zhuce .firstP span a {
+  color: #FC7355;
+}
+
+body .zhuce label {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background: #A9A9A9;
+  font-size: 0;
+  vertical-align: bottom;
+}
+
+body .zhuce label img {
+  padding: 15px;
+}
+
+body .zhuce input {
+  height: 50px;
+  width: 245px;
+  border: 1px solid #DDDDDD;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+body .zhuce .ynumber {
+  width: 120px;
+  margin-right: 5px;
+}
+
+body .zhuce button {
+  width: 120px;
+  height: 50px;
+  background: #FC7309;
+  color: #FEFEFE;
+  border: none;
+}
+
+body .zhuce .check {
+  height: 25px;
+  width: 25px;
+}
+
+body .zhuce .check2 {
+  height: 30px;
+  width: 200px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+body .zhuce .subm {
+  height: 50px;
+  width: 350px;
+}
+
+body .zhuce p {
+  height: 21px;
+  width: 345px;
+  color: #D7CBC8;
+}
+
+body .zhuce p span {
+  height: 21px;
+}
+
+body .zhuce p span i {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+body .zhuce .lastP {
+  margin-bottom: 10px;
+}
+
+body .zhuce i {
+  margin-left: 10px;
+  display: inline-block;
+  height: 50px;
+  width: 30px;
+  vertical-align: bottom;
 }
