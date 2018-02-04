@@ -58,6 +58,22 @@
                             color: #323232;
                         }
 
+                        a:hover{
+                            color: limegreen;
+                        }
+                    }
+                    li:first-child{
+                        position: relative;
+                        img{
+                            position: absolute;
+                            top: 30px;
+                            right: -70px;
+                               z-index: 1;
+                               display: none;
+                        }
+                    }
+                    li:hover img{
+                        display: block;
                     }
                     .guanzhu {
                         a {
@@ -152,7 +168,7 @@
                     top: 39px;
                     right: -1px;
                     @extend %tanxingX;
-                    display: none;
+//                  display: none;
                     p {
                         font-weight: 900;
                         padding: 10px 0 10px 10px;

@@ -2,6 +2,14 @@ body .zhuce i {
   border: 1px solid #FC7309;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   background: url(../img/admin-re-bg.jpg);
   background-size: 100% 100%;
@@ -84,6 +92,7 @@ body .zhuce button {
 body .zhuce .check {
   height: 25px;
   width: 25px;
+  font-size: 13px;
 }
 
 body .zhuce .check2 {

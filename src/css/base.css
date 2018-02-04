@@ -20,9 +20,7 @@ a{
 	text-decoration: none;
 	color: black;
 }
-h1,h2,h3,h4,p{
-	margin: 0;
-}
+
 .clearfix:after{
     content:"";
     display:block;

@@ -14,6 +14,14 @@
   justify-content: space-between;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .box {
   height: 100%;
   width: 100%;
@@ -79,6 +87,26 @@
   padding-right: 10px;
   padding-left: 30px;
   color: #323232;
+}
+
+.box header .header_t .header_tr ul li a:hover {
+  color: limegreen;
+}
+
+.box header .header_t .header_tr ul li:first-child {
+  position: relative;
+}
+
+.box header .header_t .header_tr ul li:first-child img {
+  position: absolute;
+  top: 30px;
+  right: -70px;
+  z-index: 1;
+  display: none;
+}
+
+.box header .header_t .header_tr ul li:hover img {
+  display: block;
 }
 
 .box header .header_t .header_tr ul .guanzhu a {
@@ -169,7 +197,6 @@
   position: absolute;
   top: 39px;
   right: -1px;
-  display: none;
 }
 
 .box header .header_b .top_Car .top_hide p {
