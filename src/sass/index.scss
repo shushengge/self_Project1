@@ -188,8 +188,8 @@
             }
 
         }
-        
-        .header_container{
+
+        .header_container {
             height: 20px;
             width: 100px;
             position: relative;
@@ -248,15 +248,15 @@
                 width: 1920px;
                 height: 480px;
                 img {
-                    height:480px ;
+                    height: 480px;
                     width: 1920px;
                     position: absolute;
                     top: 0;
                     left: 0;
                 }
             }
-            
-           .page {
+
+            .page {
                 position: absolute;
                 right: 45%;
                 bottom: 15px;
@@ -279,46 +279,46 @@
         }
 
     }
-    
+
     //main
-    main{
-        .container{
-            .main_one{
+    main {
+        .container {
+            .main_one {
                 padding: 10px 0;
-                height:314px ;
+                height: 314px;
                 width: 100%;
                 @extend %tanxingY;
-                div{
+                div {
                     position: relative;
-//                  float: left;
-                    width:290px ;
+                    //                  float: left;
+                    width: 290px;
                     height: 314px;
-//                  @extend %b;
-//                  @extend %tanxingY;
-                    img{
+                    //                  @extend %b;
+                    //                  @extend %tanxingY;
+                    img {
                         position: absolute;
-                        height:314px;
+                        height: 314px;
                         width: 290px;
                         top: 0;
                         left: 0;
                     }
-                    .img_center{
+                    .img_center {
                         position: absolute;
                         height: 120px;
                         width: 200px;
                         border: 4px solid $backColor;
                         left: 45px;
                         bottom: 20px;
-                        
-                        div{
+
+                        div {
                             margin: 10px;
                             height: 100px;
                             width: 180px;
                             background: $backColor;
-//                          line-height: 100px;
+                            //                          line-height: 100px;
                             text-align: center;
-                            h3{
-//                              font-weight: 900;
+                            h3 {
+                                //                              font-weight: 900;
                                 width: 160px;
                                 height: 20px;
                                 border-bottom: 1px dashed black;
@@ -329,108 +329,118 @@
                     }
                 }
             }
-            .main_tow{
-                height:465px;
-                width:100%;
+            .main_tow {
+                height: 465px;
+                width: 100%;
                 @extend %tanxingY;
-                .main_tl{
+                .main_tl {
                     @extend %tanxingX;
                     height: 465px;
                     width: 690px;
-//                  @extend %b;
-                    div{
+                    //                  @extend %b;
+                    div {
 
                         height: 230px;
                         width: 690px;
-                        img{
+                        img {
                             width: 690px;
                         }
                     }
                 }
-                .main_tr{
+                .main_tr {
                     height: 465px;
                     width: 512px;
-                    
+
                 }
-                
+
             }
-            .main_three{
+            .main_three {
                 @extend %main;
+                margin-bottom: 20px;
             }
-            .main_four{
+            .main_four {
                 @extend %main;
-                .main_three_t{
+                margin-bottom: 20px;
+                .main_three_t {
                     height: 219px;
-                    img{
+                    img {
                         height: 219px;
                     }
                 }
-                .main_three_b{
-                    .main_three_br{
+                .main_three_b {
+                    .main_three_br {
                         width: 843px;
                         @extend %tanxingY;
-                        .main_four_c{ 
-                            width: 595px;                          
-                            .main_three_brt{
+                        .main_four_c {
+                            width: 595px;
+                            .main_three_brt {
                                 width: 604px;
                                 border-bottom: none;
-                                .main_three_brt2{
+                                .main_three_brt2 {
                                     width: 200px;
-                                    border-right:1px solid #CECECE;
+                                    border-right: 1px solid #CECECE;
                                     border-bottom: 1px solid #CECECE;
-                                    border-left:none;
-                                    border-top:0;
+                                    border-left: none;
+                                    border-top: 0;
                                 }
                             }
-                            .main_three_brb{
+                            .main_three_brb {
                                 width: 604px;
                                 border-bottom: none;
-                                .main_three_brt2{
+                                .main_three_brt2 {
                                     width: 200px;
-                                    border-right:1px solid #CECECE;
-//                                  border-bottom: 1px solid #CECECE;
-                                    border-left:none;
-                                    border-top:0;
+                                    border-right: 1px solid #CECECE;
+                                    //                                  border-bottom: 1px solid #CECECE;
+                                    border-left: none;
+                                    border-top: 0;
                                 }
                             }
                         }
-                        .main_four_r{
-                            height:530px;
-                            width:240px;
-//                          border-left:1px solid #CECECE ;
+                        .main_four_r {
+                            height: 530px;
+                            width: 240px;
+                            
                             @extend %tanxingX;
-                            .mfr{
-                                height:175px ;
-                                width:240px ;
-                                border-bottom:1px solid #CECECE  ;
+                            .mfr {
+                                height: 175px;
+                                width: 240px;
+                                border-bottom: 1px solid #CECECE;
                             }
                         }
                     }
                 }
             }
-            .main_five{
+            .main_five {
                 @extend %main;
                 @extend %main2;
             }
-            .main_six{
-                @extend %main;
-                .main_three_t{
-                    height: 219px;
-                    img{
-                        height: 219px;
+            .main_six {
+                @extend %main2;
+                .main_four {
+                    .main_three_b {
+                        .main_three_br {
+                            .main_four_c {
+                                width: 612px;
+                                .main_three_brt {
+                                    width: 625px;
+                                    .main_three_brt1 {
+                                        border-bottom: 1px solid #CECECE;
+                                        border-right: 1px solid #CECECE;
+                                    }
+                                }
+                            }
+                            .main_four_r {
+                                width: 231px;
+                            }
+                        }
                     }
                 }
             }
+            
+            
         }
     }
-        
-    
-    
-    
-    
-    
-    
-    
+
     //底部
     footer {
         //      height: 840px;
