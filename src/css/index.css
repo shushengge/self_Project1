@@ -64,6 +64,7 @@ i {
   text-align: center;
   padding-left: 60px;
   color: #FEFEFE;
+  position: relative;
 }
 
 .box main .container .main_three .main_three_b .main_three_bl div p, .box main .container .main_four .main_three_b .main_three_bl div p, .box main .container .main_five .main_three_b .main_three_bl div p {

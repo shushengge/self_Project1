@@ -63,12 +63,12 @@ i {
             div {
                 height: 85px;
                 width: 305px;
-
                 background: #F8C324;
                 line-height: 85px;
                 text-align: center;
                 padding-left: 60px;
                 color: $backColor;
+                position: relative;
                 p {
                     position: absolute;
                     top: -2px;
