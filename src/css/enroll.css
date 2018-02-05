@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+i {
+  vertical-align: bottom;
+  text-align: center;
+}
+
 body {
   background: url(../img/admin-re-bg.jpg);
   background-size: 100% 100%;

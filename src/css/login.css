@@ -6,6 +6,11 @@ a {
   text-decoration: none;
 }
 
+i {
+  vertical-align: bottom;
+  text-align: center;
+}
+
 body {
   background: url("../img/admin-bg.jpg");
   background-size: 100% 100%;
@@ -132,8 +137,27 @@ body .login form .yanzhengma {
 }
 
 body .login form .inyanzheng {
-  width: 130px;
+  display: inline-block;
+  width: 120px;
   margin-right: 10px;
+  background: #FEFEFE;
+  height: 46px;
+}
+
+body .login form .inyanzheng input {
+  width: 90px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+body .login form .inyanzheng i {
+  display: inline-block;
+  width: 30px;
+  height: 46px;
+  vertical-align: bottom;
+  line-height: 30px;
+  text-align: center;
 }
 
 body .login form .suijiyma {

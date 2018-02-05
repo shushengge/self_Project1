@@ -111,8 +111,26 @@ body {
                 font-size: 13px;
             }
             .inyanzheng{
-                width: 130px;
+                display: inline-block;
+                width: 120px;
                 margin-right: 10px;
+                background: $backColor;
+                height: 46px;
+                input{
+                    width:90px;
+                    border:none;
+                    background: none;
+                    outline:none;
+                   
+                }
+                i{
+                    display: inline-block;
+                    width: 30px;
+                    height: 46px;
+                    vertical-align: bottom;
+                    line-height: 30px;
+                    text-align: center;
+                }
             }
             .suijiyma{
                 display: inline-block;
