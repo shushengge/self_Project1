@@ -4,66 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>依谷网-专注于绿色生态农产品宅生活电商</title>
+		<!--<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>-->
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<script src="lib/jquery-3.2.1.js"></script>
-		<script src="js/index.js"></script>
-
-		<script type="text/javascript">
-			jQuery(function($) {
-				//轮播
-				var $lunbo = $('.lunbo');
-				console.log($lunbo)
-				var $imgs = $lunbo.find('img');
-				var index = 0;
-				var timer;
-				var $imglen = $imgs.length;
-				var $spans = $('.page').find('span');
-
-				$imgs.not(':first').hide();
-
-				//鼠标移入移出
-				$lunbo.on('mouseenter', function() {
-
-					clearInterval(timer);
-				}).on('mouseleave', function() {
-					timer = setInterval(function() {
-						//						$($span[0]).addClass('.active');
-
-						var $img = $($imgs[index]);
-						var $span = $($spans[index]);
-						index++;
-						if(index >= $imglen) {
-							index = 0;
-						}
-						$img.fadeIn().parent().siblings('a').find('img').fadeOut();
-						$span.addClass('active').siblings('span').removeClass('active');
-					}, 3000)
-				}).trigger('mouseleave'); //在每一个匹配的元素上触发某类事件。
-
-				//main_one
-				$('.youyi').children().on('mouseenter', function() {
-					$(this).css({
-						position: 'relative',
-					}).stop().animate({
-						left: 5,
-					})
-					console.log(this);
-
-				}).on('mouseleave', function() {
-					$(this).stop().animate({
-						left: 0,
-					})
-				})
-				
-				//main_four
-				$('#main_four').children(2).children(1).find('div').css({
-					bacgroundColor:'#FE6506',
-				})
-				console.log($('#main_four').children(2))
-
-			})
-		</script>
+		<script src="js/index.js"></script>		
 	</head>
 
 	<body>
@@ -76,7 +21,7 @@
 					<div class="container clearfix">
 						<div class="header_tl">
 							<span class="htl1">欢迎光临依谷网！</span>
-							<span class="htl2"><a href="#">收藏依谷网</a><i></i></span>
+							<span class="htl2"><a href="#">收藏依谷网</a><i class="glyphicon glyphicon-star"></i></span>
 						</div>
 						<div class="header_tr">
 							<ul>
@@ -144,29 +89,30 @@
 
 				<div class="container header_container">
 					<div class="banner">
-						<h4>全部商品分类</h4>
+						<h4>全部商品分类<i class="glyphicon glyphicon-triangle-bottom"></i></h4>
 						<div class="banner_b">
 							<ul>
 								<li>
 									<a href="html/list.html">水果蔬菜</a>
 								</li>
 								<li>
-									<a href="html/list.html">水果蔬菜</a>
+									<a href="html/list.html">肉禽蛋奶</a>
+								</li>
+								
+								<li>
+									<a href="html/list.html">粮油副食</a>
+								</li>
+								<li>
+									<a href="html/list.html">零食酒饮</a>
+								</li>
+								<li>
+									<a href="html/list.html">这箱有礼</a>
 								</li>
 								<li>
 									<a href="html/list.html">水果蔬菜</a>
 								</li>
 								<li>
-									<a href="html/list.html">水果蔬菜</a>
-								</li>
-								<li>
-									<a href="html/list.html">水果蔬菜</a>
-								</li>
-								<li>
-									<a href="html/list.html">水果蔬菜</a>
-								</li>
-								<li>
-									<a href="html/list.html">水果蔬菜</a>
+									<a href="html/list.html">生活用品</a>
 								</li>
 							</ul>
 						</div>
@@ -186,11 +132,11 @@
 						<a href=""><img src="img/lunbo5.png" alt="" /></a>
 					</div>
 					<div class="page">
-						<span class="active"></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
+						<span class="active" data-id="0"></span>
+						<span data-id="1"></span>
+						<span data-id="2"></span>
+						<span data-id="3"></span>
+						<span data-id="4"></span>
 					</div>
 				</div>
 			</nav>
@@ -245,8 +191,47 @@
 								<a href="html/list.html"><img src="img/1516842749033.jpg" /></a>
 							</div>
 						</div>
-						<div class="main_tr" style="border: 1px solid black;">
-
+						<div class="main_tr">
+							<div class="main_tr_t"><b>本周爆品</b></div>
+							<div class="main_tr_b">
+								<div class="main_tr_bl mainlunbo">
+									<div>
+										<span><b>新疆库尔勒香梨1kg</b></span>
+										<a href="html/list.html"><img src="img/1517380592811.gif" /></a>
+									</div>
+									<div>
+										<span><b>依谷汕头牛肉丸800g</b></span>
+										<a href="html/list.html"><img src="img/1517380650392.jpg" /></a>
+									</div>
+									<div>
+										<span><b>俄罗斯黑锋雪蜜450g</b></span>
+										<a href="html/list.html"><img src="img/1517380674018.jpg" /></a>
+									</div>
+									<div>
+										<span><b>爱马仕双肩背包OCB4306</b></span>
+										<a href="html/list.html"><img src="img/1517468470861.jpg" /></a>
+									</div>
+								</div>
+								
+								<div class="main_tr_br mainpage ">
+									<div class="active1">
+										<a href="html/list.html"><img src="img/1517380592811.gif" /></a>
+										
+									</div>
+									<div>
+										<a href="html/list.html"><img src="img/1517380650392.jpg" /></a>
+										
+									</div>
+									<div>
+										<a href="html/list.html"><img src="img/1517380674018.jpg" /></a>
+										
+									</div>
+									<div>
+										<a href="html/list.html"><img src="img/1517468470861.jpg" /></a>										
+									</div>
+									
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -301,7 +286,7 @@
 						</div>
 						<div class="main_three_b">
 							<div class="main_three_bl">
-								<div>
+								<div class="two">
 									<p></p>
 									<span><b>水果蔬菜</b></span>
 									<button><a href="html/datalist.html">点击更多</a></button>
@@ -429,7 +414,7 @@
 								<div class="main_three_br">
 									<div class="main_four_c">
 										<div class="main_three_brt youyi">
-											
+
 											<div class="main_three_brt1">
 												<a href="html/datalist.html"><img src="img/1503998487347.png" alt="" /></a>
 											</div>
@@ -437,8 +422,8 @@
 												<a href="html/datalist.html"></a>
 											</div>
 										</div>
-										<div class="main_three_brt youyi">
-											
+										<div class="main_three_brt youyi bt2">
+
 											<div class="main_three_brt1">
 												<a href="html/datalist.html"><img src="img/1508740228350.jpg" alt="" /></a>
 											</div>
@@ -448,148 +433,148 @@
 										</div>
 									</div>
 									<div class="main_four_r youyi">
-										<img src="img/1506395095649.jpg"/>		
+										<img src="img/1506395095649.jpg" />
 									</div>
 
 								</div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="seven">
 						<div class="main_three">
-						
-						<div class="main_three_b">
-							<div class="main_three_bl">
-								<div>
-									<p></p>
-									<span><b>水果蔬菜</b></span>
-									<button><a href="html/datalist.html">点击更多</a></button>
-								</div>
-								<a href="html/datalist.html"><img src="img/1510561201648.jpg" /></a>
-							</div>
 
-							<div class="main_three_br">
-								<div class="main_three_brt youyi">
-									<div class="main_three_brt1">
-										<a href="html/datalist.html"><img src="img/1510555396184.png" /></a>
+							<div class="main_three_b">
+								<div class="main_three_bl">
+									<div>
+										<p></p>
+										<span><b>水果蔬菜</b></span>
+										<button><a href="html/datalist.html">点击更多</a></button>
 									</div>
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
-									</div>
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
-									</div>
+									<a href="html/datalist.html"><img src="img/1510561201648.jpg" /></a>
 								</div>
-								<div class="main_three_brb youyi">
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
+
+								<div class="main_three_br">
+									<div class="main_three_brt youyi">
+										<div class="main_three_brt1">
+											<a href="html/datalist.html"><img src="img/1510555396184.png" /></a>
+										</div>
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
 									</div>
-									<div class="main_three_brt2_2">
-										<a href="html/datalist.html"></a>
-									</div>
-									<div class="main_three_brt1">
-										<a href="html/datalist.html"><img src="img/1510558692975.png" /></a>
+									<div class="main_three_brb youyi">
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt2_2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt1">
+											<a href="html/datalist.html"><img src="img/1510558692975.png" /></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					</div>
-					
+
 					<div class="eight">
 						<div class="main_four">
-						<div class="main_three_b">
-							<div class="main_three_bl">
-								<div>
-									<p></p>
-									<span><b>水果蔬菜</b></span>
-									<button><a href="html/datalist.html">点击更多</a></button>
-								</div>
-								<a href="html/datalist.html"><img src="img/1516847979549.jpg" /></a>
-							</div>
-
-							<div class="main_three_br">
-								<div class="main_four_c">
-									<div class="main_three_brt">
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
+							<div class="main_three_b">
+								<div class="main_three_bl">
+									<div>
+										<p></p>
+										<span><b>水果蔬菜</b></span>
+										<button><a href="html/datalist.html">点击更多</a></button>
 									</div>
-									<div class="main_three_brb">
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
-										<div class="main_three_brt2">
-											<a href="html/datalist.html"></a>
-										</div>
-									</div>
-								</div>
-								<div class="main_four_r youyi">
-									<div class="main_four_r1 mfr">
-										<a href="html/datalist.html"><img src="img/1497333784314.jpg" alt="" /></a>
-									</div>
-									<div class="main_four_r2 mfr">
-										<a href="html/datalist.html"><img src="img/1497237126805.jpg" alt="" /></a>
-									</div>
-									<div class="main_four_r3 mfr">
-										<a href="html/datalist.html"><img src="img/1514168324646.jpg" alt="" /></a>
-									</div>
+									<a href="html/datalist.html"><img src="img/1516847979549.jpg" /></a>
 								</div>
 
+								<div class="main_three_br">
+									<div class="main_four_c">
+										<div class="main_three_brt">
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+										</div>
+										<div class="main_three_brb">
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+											<div class="main_three_brt2">
+												<a href="html/datalist.html"></a>
+											</div>
+										</div>
+									</div>
+									<div class="main_four_r youyi">
+										<div class="main_four_r1 mfr">
+											<a href="html/datalist.html"><img src="img/1497333784314.jpg" alt="" /></a>
+										</div>
+										<div class="main_four_r2 mfr">
+											<a href="html/datalist.html"><img src="img/1497237126805.jpg" alt="" /></a>
+										</div>
+										<div class="main_four_r3 mfr">
+											<a href="html/datalist.html"><img src="img/1514168324646.jpg" alt="" /></a>
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>
-					</div>
-					
+
 					<div class="nine">
 						<div class="main_three">
-						
-						<div class="main_three_b">
-							<div class="main_three_bl">
-								<div>
-									<p></p>
-									<span><b>水果蔬菜</b></span>
-									<button><a href="html/datalist.html">点击更多</a></button>
-								</div>
-								<a href="html/datalist.html"><img src="img/1516001043481.jpg" /></a>
-							</div>
 
-							<div class="main_three_br">
-								<div class="main_three_brt youyi">
-									<div class="main_three_brt1">
-										<a href="html/datalist.html"><img src="img/1515745913356.jpg" /></a>
+							<div class="main_three_b">
+								<div class="main_three_bl">
+									<div>
+										<p></p>
+										<span><b>水果蔬菜</b></span>
+										<button><a href="html/datalist.html">点击更多</a></button>
 									</div>
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
-									</div>
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
-									</div>
+									<a href="html/datalist.html"><img src="img/1516001043481.jpg" /></a>
 								</div>
-								<div class="main_three_brb youyi">
-									<div class="main_three_brt2">
-										<a href="html/datalist.html"></a>
+
+								<div class="main_three_br">
+									<div class="main_three_brt youyi">
+										<div class="main_three_brt1">
+											<a href="html/datalist.html"><img src="img/1515745913356.jpg" /></a>
+										</div>
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
 									</div>
-									<div class="main_three_brt2_2">
-										<a href="html/datalist.html"></a>
-									</div>
-									<div class="main_three_brt1">
-										<a href="html/datalist.html"><img src="img/1515745932295.jpg" /></a>
+									<div class="main_three_brb youyi">
+										<div class="main_three_brt2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt2_2">
+											<a href="html/datalist.html"></a>
+										</div>
+										<div class="main_three_brt1">
+											<a href="html/datalist.html"><img src="img/1515745932295.jpg" /></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 			</main>

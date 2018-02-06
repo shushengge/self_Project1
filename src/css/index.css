@@ -2,16 +2,21 @@
   border: 1px solid #FC7309;
 }
 
-.box, .box header .header_b .top_Car .top_hide, .box main .container .main_tow .main_tl, .box main .container .main_four .main_three_b .main_three_br .main_four_r, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt2, .box footer .footer_b .footer_b_t .footer_b_t_r {
+.box, .box header .header_b .top_Car .top_hide, .box main .container .main_tow .main_tl, .box main .container .main_tow .main_tr, .box main .container .main_tow .main_tr .main_tr_b .main_tr_br, .box main .container .main_four .main_three_b .main_three_br .main_four_r, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lt .footer_b_t_lt2, .box footer .footer_b .footer_b_t .footer_b_t_r {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.box main .container .main_three .main_three_b, .box main .container .main_four .main_three_b, .box main .container .main_five .main_three_b, .box main .container .main_one, .box main .container .main_tow, .box main .container .main_four .main_three_b .main_three_br, .box footer .footer_t ul, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb, .box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 {
+.box main .container .main_three .main_three_b, .box main .container .main_four .main_three_b, .box main .container .main_five .main_three_b, .box main .container .main_one, .box main .container .main_tow, .box main .container .main_tow .main_tr .main_tr_b, .box main .container .main_four .main_three_b .main_three_br, .box footer .footer_t ul, .box footer .footer_b .footer_b_t .footer_b_t_l .footer_b_t_lb, .box footer .footer_b .footer_b_t .footer_b_t_r .footer_b_t_r2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_bl div span {
+  text-align: center;
+  vertical-align: auto;
 }
 
 h1,
@@ -396,6 +401,10 @@ i {
   font-size: 14px;
 }
 
+.box header .header_b .top_Car:hover .top_hide {
+  display: block;
+}
+
 .box header .header_container {
   height: 20px;
   width: 100px;
@@ -556,7 +565,71 @@ i {
 
 .box main .container .main_tow .main_tr {
   height: 465px;
-  width: 512px;
+  width: 500px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_t {
+  height: 70px;
+  width: 500px;
+  background-color: #9FD132;
+  line-height: 70px;
+  text-align: center;
+  font-size: 28px;
+  color: #FEFEFE;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b {
+  width: 500px;
+  height: 385px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_bl {
+  height: 384px;
+  width: 390px;
+  position: relative;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_bl div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_bl div span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 60px;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
+  color: #FEFEFE;
+  line-height: 60px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_bl div a img {
+  height: 384px;
+  width: 390px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_br {
+  width: 90px;
+  height: 384px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_br div {
+  height: 88px;
+  width: 88px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_br div a img {
+  height: 87px;
+  width: 87px;
+}
+
+.box main .container .main_tow .main_tr .main_tr_b .main_tr_br .active1 {
+  border: 2px solid #9FD132;
 }
 
 .box main .container .main_three {

@@ -94,9 +94,14 @@ body {
                 color: #D7CBC8;
                 font-size: 14px;
                 span {
-                    //            display: none;
+                    display: none;
+                    position: relative;
                     height: 21px;
+                    padding-left: 25px;
                     i {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                         display: inline-block;
                         height: 15px;
                         width: 15px;
@@ -112,7 +117,7 @@ body {
             }
             .inyanzheng{
                 display: inline-block;
-                width: 120px;
+                width: 134px;
                 margin-right: 10px;
                 background: $backColor;
                 height: 46px;
@@ -136,6 +141,7 @@ body {
                 display: inline-block;
                 width:160px;
                 height: 46px;
+                line-height: 46px;
                 vertical-align: bottom;
                 background: $backColor;
             }
