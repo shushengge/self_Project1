@@ -45,7 +45,7 @@ body {
                 }
             }
         }
-        form {
+        .biaodan{
             height: 300px;
             width: 360px;
             margin: 0;
@@ -135,11 +135,14 @@ body {
                     vertical-align: bottom;
                     line-height: 30px;
                     text-align: center;
+                    color: red;
+                    font-size: 20px;
+                    @extend %b;
                 }
             }
             .suijiyma{
                 display: inline-block;
-                width:160px;
+                width:150px;
                 height: 46px;
                 line-height: 46px;
                 vertical-align: bottom;

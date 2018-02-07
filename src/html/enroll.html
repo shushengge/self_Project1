@@ -1,38 +1,38 @@
 <html>
+
 	<head>
 		<title>注册--依谷网</title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/enroll.css"/>
-	</head>
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/enroll.css" />
+		<script src="../js/require.js" data-main="../js/enroll"></script>	</head>
+
 	<body>
 		<div class="zhuce">
 			<h1>
 				<img src="../img/logo_login.png"/>
 			</h1>
-			<p class="firstP">注册<span>已有帐号<a href="#">登录</a></span></p>
-			
-			<form action="" method="post">
-				<filedset>
-				</filedset>
-				<label for=""><img src="../img/register_04.png"/></label>				
-				<input type="text"/ placeholder="请输入手机号"><i></i><br/>
+			<p class="firstP">注册<span>已有帐号<a href="login.html">登录</a></span></p>
+
+				<label for=""><img src="../img/register_04.png"/></label>
+				<input type="text" placeholder="请输入手机号" class="phone"/><i></i><br/>
 				<p>
 					<span><i><img src="../img/login_error.png"/></i>请输入正确的手机号</span>
 				</p>
 				<label for=""><img src="../img/register_05.png"/></label>
-				<input type="text" class="ynumber" placeholder="请输入短信验证码"/><button>发送验证码</button><br />
-				<p><span><i><img src="../img/login_error.png"/></i>请输入正确的短信验证码</span></p>
+				<input type="text" class="ynumber" placeholder="请输入短信验证码" /><button>发送验证码</button><br />
+				<p>
+					<span><i><img src="../img/login_error.png"/></i>请输入正确的短信验证码</span></p>
 				<label for="mima1"><img src="../img/register_02.png"/></label>
-				<input type="password" name="" id="mima1" placeholder="请输入密码"/><i></i><br />
+				<input type="password"  id="mima1" class="mima1" clplaceholder="请输入密码" /><i></i><br />
 				<p><span><i><img src="../img/login_error.png"/></i>密码为6-16位的数字，字母或下划线组成</span></p>
 				<label for="mima2" class="mima2"><img src="../img/register_02.png"/></label>
-				<input type="password" id="mima2" classe="nima2" placeholder="请输入确认密码"/><i></i><br />
+				<input type="password" id="mima2" class="nima2" placeholder="请输入确认密码" /><i></i><br />
 				<p class="lastP"><span><i><img src="../img/login_error.png"/></i>请输入确认密码</span></p>
-				<input type="checkbox" class="check" checked="checked"/>
+				<input type="checkbox" class="check" checked="checked" />
 				<div class="check2">同意<u>依谷网服务协议</u></div>
 				<button class="subm">完成</button>
-				
-			</form>
+
 		</div>
 	</body>
+
 </html>

@@ -1,3 +1,7 @@
+body .login .biaodan .inyanzheng i {
+  border: 1px solid #FC7309;
+}
+
 h1,
 h2,
 h3,
@@ -69,13 +73,13 @@ body .login .firstP span a {
   color: #FC7355;
 }
 
-body .login form {
+body .login .biaodan {
   height: 300px;
   width: 360px;
   margin: 0;
 }
 
-body .login form label {
+body .login .biaodan label {
   display: inline-block;
   height: 46px;
   width: 46px;
@@ -84,11 +88,11 @@ body .login form label {
   vertical-align: bottom;
 }
 
-body .login form label img {
+body .login .biaodan label img {
   padding: 12px;
 }
 
-body .login form input {
+body .login .biaodan input {
   height: 46px;
   width: 300px;
   border: 1px solid #DDDDDD;
@@ -96,41 +100,41 @@ body .login form input {
   font-size: 16px;
 }
 
-body .login form .check {
+body .login .biaodan .check {
   height: 25px;
   width: 25px;
   font-size: 13px;
 }
 
-body .login form .check2 {
+body .login .biaodan .check2 {
   height: 30px;
   width: 200px;
   display: inline-block;
   margin-left: 10px;
 }
 
-body .login form .subm {
+body .login .biaodan .subm {
   height: 50px;
   width: 350px;
   background: #FC7309;
   border: none;
 }
 
-body .login form p {
+body .login .biaodan p {
   height: 21px;
   width: 345px;
   color: #D7CBC8;
   font-size: 14px;
 }
 
-body .login form p span {
+body .login .biaodan p span {
   display: none;
   position: relative;
   height: 21px;
   padding-left: 25px;
 }
 
-body .login form p span i {
+body .login .biaodan p span i {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,14 +143,14 @@ body .login form p span i {
   width: 15px;
 }
 
-body .login form .yanzhengma {
+body .login .biaodan .yanzhengma {
   line-height: 46px;
   background: none;
   color: #FEFEFE;
   font-size: 13px;
 }
 
-body .login form .inyanzheng {
+body .login .biaodan .inyanzheng {
   display: inline-block;
   width: 134px;
   margin-right: 10px;
@@ -154,44 +158,46 @@ body .login form .inyanzheng {
   height: 46px;
 }
 
-body .login form .inyanzheng input {
+body .login .biaodan .inyanzheng input {
   width: 90px;
   border: none;
   background: none;
   outline: none;
 }
 
-body .login form .inyanzheng i {
+body .login .biaodan .inyanzheng i {
   display: inline-block;
   width: 30px;
   height: 46px;
   vertical-align: bottom;
   line-height: 30px;
   text-align: center;
+  color: red;
+  font-size: 20px;
 }
 
-body .login form .suijiyma {
+body .login .biaodan .suijiyma {
   display: inline-block;
-  width: 160px;
+  width: 150px;
   height: 46px;
   line-height: 46px;
   vertical-align: bottom;
   background: #FEFEFE;
 }
 
-body .login form .jizhu {
+body .login .biaodan .jizhu {
   height: 30px;
   padding-top: 10px;
   line-height: 10px;
   position: relative;
 }
 
-body .login form .jizhu span {
+body .login .biaodan .jizhu span {
   display: inline-block;
   vertical-align: bottom;
 }
 
-body .login form .jizhu .findpw {
+body .login .biaodan .jizhu .findpw {
   position: absolute;
   top: 20px;
   right: 0;
