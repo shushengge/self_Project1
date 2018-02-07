@@ -5,19 +5,21 @@ require(['config'], function() {
 		var $ynumber = $('.ynumber');
 		var $mima1 = $('.mima1');
 		var $mima2 = $('.nima2');
-		
-
+		var val1 = 0;
+		var val2 = 0;
+		var val3 = 0;
 		//手机号
 		$phone.on('blur', function() {
 			var $phoneval = $phone.val();
 			if(!/^1[34578]\d{9}$/.test($phoneval)) {
-				console.log(94);
 				$('.phoneWarn').css({
 					display: 'block',
 				})
 				$('.phoneWarn1').css({
 					background: 'url(../img/cuowuzhucw.png) -3px',
-				})
+				});
+				val1 = 1;
+				
 				return false;
 			} else {
 				$('.phoneWarn').css({
@@ -26,6 +28,7 @@ require(['config'], function() {
 				$('.phoneWarn1').css({
 					background: 'url(../img/zhengquezhucw.png) -3px',
 				})
+				val1 = 0;
 			}
 		})
 
@@ -64,19 +67,19 @@ require(['config'], function() {
 
 			$ynumber.on('blur', function() {
 				console.log(999)
-				if(!/^\d{6}$/.test($ynumberval)) {
-					$('.messageWarn').css({
-						display: 'block',
-					})
-					
-
-					return false;
-				} else {
-					$('.messageWarn').css({
-						display: 'none',
-					})
-					
-				}
+//				if(!/^\d{6}$/.test($ynumberval)) {
+//					$('.messageWarn').css({
+//						display: 'block',
+//					})
+//					
+//
+//					return false;
+//				} else {
+//					$('.messageWarn').css({
+//						display: 'none',
+//					})
+//					
+//				}
 			})
 		})
 
@@ -90,7 +93,7 @@ require(['config'], function() {
 				$('.passwordWarn1').css({
 					background: 'url(../img/cuowuzhucw.png) -3px'
 				})
-
+				val2 = 1; 
 				return false;
 			} else {
 				$('.passwordWarn').css({
@@ -99,6 +102,7 @@ require(['config'], function() {
 				$('.passwordWarn1').css({
 					background: 'url(../img/zhengquezhucw.png) -3px'
 				})
+				val2 = 0;
 			};
 
 		})
@@ -107,8 +111,7 @@ require(['config'], function() {
 		$mima2.on('blur', function() {
 			let $mimaTwoval = $mima2.val();
 			let $mimaOneval = $mima1.val();
-			console.log($mimaOneval)
-			console.log($mimaTwoval)
+			
 
 			if(!($mimaTwoval === $mimaOneval) || $mimaTwoval == ''||$mimaTwoval.length<6) {
 				$('.querenWarn').css({
@@ -117,7 +120,8 @@ require(['config'], function() {
 				$('.querenWarn1').css({
 					background: 'url(../img/cuowuzhucw.png) -3px'
 				});
-				console.log(888)
+				val3 = 1;
+				return false;
 			} else {
 				$('.querenWarn').css({
 					display: 'none',
@@ -125,8 +129,35 @@ require(['config'], function() {
 				$('.querenWarn1').css({
 					background: 'url(../img/zhengquezhucw.png) -3px'
 				});
+				val3 = 0;
 			}
-		})
+		});
+		
+		//注册成功
+		$('.subm').on('click',function(){
+			var vall = val1 + val2 + val3 ;
+			console.log(val3);
+			if(vall == 0){
+				$.ajax({
+					url:'../mysql/enroll.php',
+					data:{
+						username:$('.phone').val(),
+						password:$('#mima1').val()
+					},
+					success:function(data){
+						if(data === 'success'){
+							location.href = 'login.html';
+						}else if(data === 'fail'){
+							alert(444)
+						}
+					}
+				});				
+			}else{
+				alert('未注册成功，请重新注册！');
+			}
+				
+			});
+		
 
 	});
 

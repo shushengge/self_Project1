@@ -1,5 +1,50 @@
 require(['config'], function() {
 	require(['jquery'], function($) {
+		//吸顶菜单
+		var down = false;
+		//on监听  sctoll滑动  监听到滑动后执行function(){}
+		$(window).on("scroll", function() {
+			//this指的是window
+			if($(this).scrollTop() > 100) {
+				$(".header_b").addClass("fixed");
+				//!down:非false，就是ture的意思
+				if(!down) {
+					$(".header_b").css({ "top": "-40px" }).animate({ "top": "0px" }, { duration: 500 })
+					down = true;
+				}
+			} else {
+				$(".header_b").removeClass("fixed");
+				down = false;
+			}
+		})
+		
+		//banner
+		
+//		var $bannerLeft = $('.banner_left');
+//		$bannerLeft.parent().on('mouseenter',function(){
+//			$bannerLeft.animate()({
+//				
+//			})
+//		})
+		
+		var $hasMenu = $('.banner_left').parent();			
+			var timer3;
+//			$hasMenu.children('ul').stop().fadeOut();
+			$hasMenu.mouseenter(function(){
+				clearTimeout(timer3);
+				console.log($(this))
+				$(this).siblings().children('ul').stop().fadeOut();
+				var $subMenu = $(this).children('ul');
+				$subMenu.stop().fadeIn();
+			}).mouseleave(function(){				
+				timer3 = setTimeout(function(){
+					var $subMenu = $(this).children('ul');
+					$subMenu.stop().fadeOut();
+				}.bind(this),600);
+				
+			});
+		
+		
 		//轮播
 		var $lunbo = $('.lunbo');
 		var $imgs = $lunbo.find('img');
@@ -17,7 +62,6 @@ require(['config'], function() {
 		}).on('mouseleave', function() {
 			timer = setInterval(function() {
 				//						$($span[0]).addClass('.active');
-
 				var $img = $($imgs[index]);
 				var $span = $($spans[index]);
 				index++;
@@ -25,10 +69,9 @@ require(['config'], function() {
 					index = 0;
 				};
 
-				
 				$img.fadeIn().parent().siblings('a').find('img').fadeOut();
 				$span.addClass('active').siblings('span').removeClass('active');
-			}, 2000)
+			}, 2800)
 		}).trigger('mouseleave'); //在每一个匹配的元素上触发某类事件。
 
 		//main_one
@@ -131,4 +174,3 @@ require(['config'], function() {
 
 	});
 });
-

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .box header .header_b .header_b_c .hbc1 input, .box header .header_b .header_b_c .hbc1 button, .box header .header_b .top_Car, .box header .header_b .top_Car .top_hide {
   border: 1px solid #FC7309;
 }
@@ -34,6 +35,14 @@ a {
 i {
   vertical-align: bottom;
   text-align: center;
+}
+
+.fixed {
+  /*相对于body固定定位*/
+  position: fixed;
+  top: -40px;
+  left: 0px;
+  z-index: 199;
 }
 
 .box main .container .main_three .main_three_t, .box main .container .main_four .main_three_t, .box main .container .main_five .main_three_t {
@@ -298,6 +307,7 @@ i {
 .box header .header_b {
   background-color: #DFDFDF;
   padding: 10px 0;
+  width: 100%;
 }
 
 .box header .header_b .logo {
@@ -401,6 +411,10 @@ i {
   font-size: 14px;
 }
 
+.box header .header_b .top_Car:hover {
+  border-bottom: none;
+}
+
 .box header .header_b .top_Car:hover .top_hide {
   display: block;
 }
@@ -409,7 +423,7 @@ i {
   height: 20px;
   width: 100px;
   position: relative;
-  z-index: 1;
+  z-index: 99;
 }
 
 .box header .header_container .banner {
@@ -430,6 +444,10 @@ i {
   color: #FEFEFE;
 }
 
+.box header .header_container .banner .banner_b {
+  z-index: 2;
+}
+
 .box header .header_container .banner .banner_b ul {
   height: 430px;
   width: 150px;
@@ -437,6 +455,7 @@ i {
   text-align: center;
   background: #F9F9F9;
   display: inline-block;
+  z-index: 6;
 }
 
 .box header .header_container .banner .banner_b ul li {
@@ -445,6 +464,30 @@ i {
   padding: 0 40px;
   background: #FEFEFE;
   line-height: 50px;
+  position: relative;
+}
+
+.box header .header_container .banner .banner_b ul li .banner_left {
+  position: absolute;
+  top: -10px;
+  left: 150px;
+  height: 200px;
+  width: 700px;
+  text-align: left;
+  background-color: #FEFEFE;
+  display: none;
+}
+
+.box header .header_container .banner .banner_b ul li .banner_left li h4 {
+  display: inline-block;
+  background: none;
+  color: #FC7309;
+  padding-right: 10px;
+}
+
+.box header .header_container .banner .banner_b ul li .banner_left li a {
+  font-size: 14px;
+  color: lightslategrey;
 }
 
 .box nav {
@@ -480,7 +523,7 @@ i {
   position: absolute;
   right: 45%;
   bottom: 15px;
-  z-index: 100;
+  z-index: 1;
 }
 
 .box nav .container .page span {

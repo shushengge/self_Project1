@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
@@ -13,4 +14,12 @@ a {
 i {
   vertical-align: bottom;
   text-align: center;
+}
+
+.fixed {
+  /*相对于body固定定位*/
+  position: fixed;
+  top: -40px;
+  left: 0px;
+  z-index: 199;
 }

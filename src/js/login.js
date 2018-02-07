@@ -9,7 +9,9 @@ require(['config'], function() {
 		//用户名、密码正则
 		var $name = $('.name');
 		var $word = $('.word');
-		
+		var val1 = 0;
+		var val2 = 0;
+		var val3 = 0;
 		
 		//用户名
 		$name.on('blur',function(){
@@ -18,10 +20,12 @@ require(['config'], function() {
 				$('.yonghumingyz').find('span').css({
 					display:'block',
 				})
+				val1 = 1;
 			}else{
 				$('.yonghumingyz').find('span').css({
 					display:'none',
 				})
+				val1 = 0;
 			}
 //				console.log($('.yonghumingyz').find('span'))
 //				console.log(888);
@@ -34,10 +38,12 @@ require(['config'], function() {
 				$('.mimayz').find('span').css({
 					display:'block',
 				})
+				val2 = 1;
 			}else{
 				$('.mimayz').find('span').css({
 					display:'none',
 				})
+				val2 = 0;
 			}
 				console.log($('.yonghumingyz').find('span'))
 				console.log(888);
@@ -85,19 +91,44 @@ require(['config'], function() {
         	$i.css({
         		background:'url(../img/cuowuzhucw.png) -3px',
         	})
+        	val3 = 1;
         }else if(oValue != code){ 
 			$i.css({
         		background:'url(../img/cuowuzhucw.png) -3px',
         	})
           oValue = ""; 
-          createCode(); 
+          createCode();
+          val3 = 1;
         }else{ 
 			$i.css({
         		background:'url(../img/zhengquezhucw.png) -3px',
         	})
-     
+     		val3 = 0;
         } 
       });  
+      
+      
+      
+      $('.sumb').on('click',function(){
+      	var vall = val1 + val2 + val3 ;
+      	if(vall == 0){}
+				$.ajax({
+					url:'../mysql/login.php',
+					data:{
+						username:$('#username').val(),
+						password:$('#password').val()
+					},
+					success:function(data){
+						console.log(data);
+						if(data === 'success'){
+							location.href = 'index.html';
+						}else if(data === 'fail'){
+							$('#username').parent().addClass('has-error');
+						}
+					}
+				})
+				
+			})
 	
 	});
 });

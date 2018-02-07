@@ -88,6 +88,7 @@
         .header_b {
             background-color: #DFDFDF;
             padding: 10px 0;
+            width: 100%;
             .logo {
                 float: left;
             }
@@ -188,6 +189,9 @@
                     }
                 }
             }
+            .top_Car:hover{
+                border-bottom: none;
+            }
             .top_Car:hover .top_hide{
                     display: block;
                 }
@@ -198,7 +202,7 @@
             height: 20px;
             width: 100px;
             position: relative;
-            z-index: 1;
+            z-index: 99;
 
             .banner {
                 height: 470px;
@@ -216,6 +220,7 @@
                     color: $backColor;
                 }
                 .banner_b {
+                    z-index: 2;
                     ul {
                         height: 430px;
                         width: 150px;
@@ -223,12 +228,41 @@
                         text-align: center;
                         background: #F9F9F9;
                         display: inline-block;
+                        z-index:6;
                         li {
                             height: 50px;
                             margin-top: 5px;
                             padding: 0 40px;
                             background: $backColor;
                             line-height: 50px;
+                            position: relative;
+                            
+                            .banner_left{
+                                position: absolute;
+                                top: -10px;
+                                left: 150px;
+                                height: 200px;
+                                width: 700px;
+                                text-align: left;
+                                background-color: $backColor;
+                                display: none;
+//                              z-index: 6;
+                                li{
+                                    h4{
+                                        display: inline-block;
+                                        background: none;
+                                        color: $mainColor;
+                                        padding-right: 10px;
+                                   
+                                    }
+                                   a{ 
+                                       font-size: 14px; 
+                                       color: lightslategrey;
+//                                     border-left: 1px solid black;
+                                   } 
+                                   
+                                }
+                            }
                         }
                     }
                 }
@@ -265,7 +299,7 @@
                 position: absolute;
                 right: 45%;
                 bottom: 15px;
-                z-index: 100;
+                z-index: 1;
                 span {
                     display: inline-block;
                     margin: 0 5px;
