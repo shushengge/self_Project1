@@ -14,7 +14,7 @@ require(['config'], function() {
 		//用户名
 		$name.on('blur',function(){
 			var $nval = $name.val();
-			if($nval == ""){
+			if(!/^1[34578]\d{9}$/.test($nval)||$nval == ""){
 				$('.yonghumingyz').find('span').css({
 					display:'block',
 				})
@@ -30,7 +30,7 @@ require(['config'], function() {
 		//密码
 		$word.on('blur',function(){
 			var $wvalue = $word.val();
-			if($wvalue == ""){
+			if(!/^[^\s]{6,16}$/.test($wvalue) || $wvalue == ""){
 				$('.mimayz').find('span').css({
 					display:'block',
 				})
@@ -43,19 +43,23 @@ require(['config'], function() {
 				console.log(888);
 		})
 		
-		//验证码 
+	//验证码 
       var code; 
       function createCode(){ 
-        code = '';//首先默认code为空字符串 
-        var codeLength = 4;//设置长度，这里看需求，我这里设置了4 
+        code = '';
+        var codeLength = 4;
         var codeV = $(".suijiyma"); 
         //设置随机字符 
         var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'); 
-        for(var i = 0; i < codeLength; i++){ //循环codeLength 我设置的4就是循环4次   
-           var index = Math.floor(Math.random()*36); //设置随机数范围,这设置为0 ~ 36  
-           code += random[index]; //字符串拼接 将每次随机的字符 进行拼接 
+        for(var i = 0; i < codeLength; i++){ 
+        	//4次  循环codeLength
+        	//设置随机数范围,这设置为0 ~ 36 
+           var index = Math.floor(Math.random()*36); 
+           //字符串拼接 将每次随机的字符 进行拼接 
+           code += random[index]; 
       } 
-        codeV.text(code);//将拼接好的字符串赋值给展示的Value 
+      //将拼接好的字符串赋值给展示的Value 
+        codeV.text(code);
       } 
       //页面开始加载验证码 
       createCode(); 
@@ -68,23 +72,32 @@ require(['config'], function() {
         	backgroundColor:'#333',
         	color:'white'
         });
-//      下面就是判断是否==的代码，无需解释 
-      $("#b1").bind('click',function() { 
-         var oValue = $("#in1").val().toUpperCase(); 
-         $("#in1").next().html(""); 
+
+      $('#in1').on('blur',function() { 
+      	
+         var oValue = $("#in1").val().toUpperCase();
+         
+         var $i= $('.inyanzheng').find('i');
+         console.log($i)
+//       $("#in1").next().html(""); 
         if(oValue ==""){ 
-          $("#in1").next().addClass('glyphicon glyphicon-remove-sign'); 
+        	console.log(666)
+        	$i.css({
+        		background:'url(../img/cuowuzhucw.png) -3px',
+        	})
         }else if(oValue != code){ 
-          $("#in1").next().addClass('glyphicon glyphicon-remove-sign'); 
-//        $("#l1").html("<font color='red'>验证码不正确，请重新输入</font>"); 
+			$i.css({
+        		background:'url(../img/cuowuzhucw.png) -3px',
+        	})
           oValue = ""; 
           createCode(); 
         }else{ 
-//        $("#l1").html("<font color='blue'>验证码正确</font>"); 
-          $("#in1").next().addClass('glyphicon glyphicon-ok-sign').removeClass('glyphicon glyphicon-remove-sign'); 
+			$i.css({
+        		background:'url(../img/zhengquezhucw.png) -3px',
+        	})
+     
         } 
       });  
-
-			
+	
 	});
 });

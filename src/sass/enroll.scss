@@ -25,6 +25,7 @@ body {
             line-height: 40px;
             height: 40px;
             span {
+                display: inline-block;
                 font-size: 16px;
                 position: absolute;
                 right: 0;
@@ -56,6 +57,7 @@ body {
         .ynumber {
             width: 120px;
             margin-right: 5px;
+            font-size: 13px;
         }
         button {
             width: 120px;
@@ -85,7 +87,7 @@ body {
             color: #D7CBC8;
 //          margin: 5px 0px;
             span {
-                  display: none;
+                display: none;
                 position: relative;
                 height: 21px;
                 padding-left: 40px;
@@ -111,7 +113,7 @@ body {
             display: inline-block;
             height: 50px;
             width: 30px;
-            @extend %b;
+//          @extend %b;
             vertical-align: bottom;
         }
     }

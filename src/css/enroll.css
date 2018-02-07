@@ -1,7 +1,3 @@
-body .zhuce i {
-  border: 1px solid #FC7309;
-}
-
 h1,
 h2,
 h3,
@@ -53,6 +49,7 @@ body .zhuce .firstP {
 }
 
 body .zhuce .firstP span {
+  display: inline-block;
   font-size: 16px;
   position: absolute;
   right: 0;
@@ -88,6 +85,7 @@ body .zhuce input {
 body .zhuce .ynumber {
   width: 120px;
   margin-right: 5px;
+  font-size: 13px;
 }
 
 body .zhuce button {
