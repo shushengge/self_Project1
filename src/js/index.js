@@ -218,7 +218,24 @@ require(['config'], function() {
 				url: '../api/index.php',
 				dataType: 'text',
 				success: function(data) {
-						
+					
+//					var $ht = $.map(data, function(item) {
+//						var $data
+////						return `
+////							<div data-id="${item.id}">
+////								<a href="html/datalist.html">
+////									<img src="${item.img}"/>
+////								</a>
+////								<p>${item.name}</p>
+////								<div>
+////									<span>${item.price}</span>
+////									<span><d>${item.oprice}</d></span>
+////								</div>
+////								<span class="shanghua">加入购物车</span>
+////							</div>
+////						`
+//					}).join('\n');
+					
 					var $mainThreeBrt2 = $('.main_three_brt2').children('a');
 					var $mtbindex = $mainThreeBrt2.length;
 					var data = JSON.parse(data);
