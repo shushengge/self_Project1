@@ -4,8 +4,16 @@ require(['config'], function() {
 		var $glc = $('.glc');
 		var $glb = $('glb');
 		
-		
-		
-		
+		function goodslist() {
+			$.ajax({
+				url: '../api/index.php',
+				dataType: 'text',
+				success: function(data) {
+						
+				
+				}
+			})
+		}
+		goodslist();
 	});
 });

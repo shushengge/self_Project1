@@ -1,16 +1,70 @@
 @charset "UTF-8";
-#goodslist .glt .glt_r {
+#goodslist .glcontainer .glt .glt_r {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#goodslist .glt .glt_r .glt_r2 i, #goodslist .glb i {
+#goodslist .glcontainer .glt .glt_r .glt_r2 i, #goodslist .glcontainer .glb i {
   display: inline-block;
   text-align: center;
   height: 65px;
   width: 50px;
   color: #FC7309;
+}
+
+.hpimg {
+  position: relative;
+  overflow: hidden;
+  height: 264px;
+  width: 201px;
+}
+
+.hpimg img {
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}
+
+.hpimg p {
+  text-align: center;
+  height: 20px;
+  width: 197px;
+  font-size: 14px;
+}
+
+.hpimg .shanghua {
+  display: block;
+  position: absolute;
+  background: #FC7309;
+  height: 35px;
+  width: 180px;
+  text-align: center;
+  bottom: -35px;
+  left: 0;
+  color: #FEFEFE;
+  line-height: 35px;
+  opacity: 0.6;
+}
+
+.hpimg div {
+  height: 20px;
+  width: 197px;
+  padding: 5px 10px 0px 10px;
+}
+
+.hpimg div span {
+  color: #FC7309;
+  display: inline-block;
+  width: 70px;
+}
+
+.hpimg div .hpspan2 {
+  width: 40px;
+  color: black;
+  font-size: 13px;
+  padding-left: 30px;
 }
 
 h1,
@@ -38,7 +92,12 @@ i {
   z-index: 199;
 }
 
-#goodslist .glt {
+#goodslist .glcontainer {
+  height: 1510px;
+  width: 100%;
+}
+
+#goodslist .glcontainer .glt {
   height: 40px;
   width: 100%;
   line-height: 40px;
@@ -46,17 +105,17 @@ i {
   font-size: 13px;
 }
 
-#goodslist .glt .glt_l {
+#goodslist .glcontainer .glt .glt_l {
   float: left;
   height: 40px;
   padding-left: 10px;
 }
 
-#goodslist .glt .glt_l h4 {
+#goodslist .glcontainer .glt .glt_l h4 {
   display: inline-block;
 }
 
-#goodslist .glt .glt_l .priceLU {
+#goodslist .glcontainer .glt .glt_l .priceLU {
   display: inline-block;
   height: 40px;
   background: #FC7309;
@@ -65,13 +124,13 @@ i {
   width: 30px;
 }
 
-#goodslist .glt .glt_l .gtext1 {
+#goodslist .glcontainer .glt .glt_l .gtext1 {
   height: 20px;
   width: 60px;
   border: 1px solid lightgray;
 }
 
-#goodslist .glt .glt_r {
+#goodslist .glcontainer .glt .glt_r {
   float: right;
   width: 673px;
   height: 40px;
@@ -79,17 +138,17 @@ i {
   padding: 0 20px;
 }
 
-#goodslist .glt .glt_r div {
+#goodslist .glcontainer .glt .glt_r div {
   float: left;
 }
 
-#goodslist .glt .glt_r div input {
+#goodslist .glcontainer .glt .glt_r div input {
   border: 1px solid lightgrey;
   height: 30px;
   width: 250px;
 }
 
-#goodslist .glt .glt_r .glt_r1 button {
+#goodslist .glcontainer .glt .glt_r .glt_r1 button {
   height: 32px;
   width: 60px;
   background: #FC7309;
@@ -97,24 +156,24 @@ i {
   color: #FEFEFE;
 }
 
-#goodslist .glt .glt_r .glt_r2 i {
+#goodslist .glcontainer .glt .glt_r .glt_r2 i {
   width: 30px;
   height: 40px;
 }
 
-#goodslist .glc {
+#goodslist .glcontainer .glc {
   height: 500px;
   width: 100%;
   border: 1px solid #FC7309;
 }
 
-#goodslist .glb {
+#goodslist .glcontainer .glb {
   height: 65px;
   width: 100%;
   line-height: 65px;
   text-align: end;
 }
 
-#goodslist .glb .i3 {
+#goodslist .glcontainer .glb .i3 {
   color: black;
 }

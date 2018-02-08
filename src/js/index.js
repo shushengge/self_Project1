@@ -16,33 +16,32 @@ require(['config'], function() {
 				$(".header_b").removeClass("fixed");
 				down = false;
 			}
-		})		
+		})
 		//banner
-		
-//		var $bannerLeft = $('.banner_left');
-//		$bannerLeft.parent().on('mouseenter',function(){
-//			$bannerLeft.animate()({
-//				
-//			})
-//		})
-		
-		var $hasMenu = $('.banner_left').parent();			
-			var timer3;
-//			$hasMenu.children('ul').stop().fadeOut();
-			$hasMenu.mouseenter(function(){
-				clearTimeout(timer3);
-				$(this).siblings().children('ul').stop().fadeOut();
+
+		//		var $bannerLeft = $('.banner_left');
+		//		$bannerLeft.parent().on('mouseenter',function(){
+		//			$bannerLeft.animate()({
+		//				
+		//			})
+		//		})
+
+		var $hasMenu = $('.banner_left').parent();
+		var timer3;
+		//			$hasMenu.children('ul').stop().fadeOut();
+		$hasMenu.mouseenter(function() {
+			clearTimeout(timer3);
+			$(this).siblings().children('ul').stop().fadeOut();
+			var $subMenu = $(this).children('ul');
+			$subMenu.stop().fadeIn();
+		}).mouseleave(function() {
+			timer3 = setTimeout(function() {
 				var $subMenu = $(this).children('ul');
-				$subMenu.stop().fadeIn();
-			}).mouseleave(function(){				
-				timer3 = setTimeout(function(){
-					var $subMenu = $(this).children('ul');
-					$subMenu.stop().fadeOut();
-				}.bind(this),600);
-				
-			});
-		
-		
+				$subMenu.stop().fadeOut();
+			}.bind(this), 600);
+
+		});
+
 		//轮播
 		var $lunbo = $('.lunbo');
 		var $imgs = $lunbo.find('img');
@@ -169,7 +168,7 @@ require(['config'], function() {
 				$mainLp.addClass('active1').siblings('div').removeClass('active1');
 			}, 2000)
 		}).trigger('mouseleave'); //在每一个匹配的元素上触发某类事件。
-		
+
 		//侧边栏
 		$('.box').append(`<div class="side">
 				<div class="side_center">
@@ -186,36 +185,74 @@ require(['config'], function() {
 			</div>
 		</div>`)
 		$('.side').css({
-			height:'$(widow).heigth',
-			top:'$(window).scollTop()',
-				
+			height: '$(widow).heigth',
+			top: '$(window).scollTop()',
+
 		}).children('.side_center').css({
-			position:'absolute',
-			top:'50%',
-			transform:'translate(0,-50%)',
-			height:'300px',
-			width:'100%',
-			border:'1px solid red',
+			position: 'absolute',
+			top: '50%',
+			transform: 'translate(0,-50%)',
+			height: '300px',
+			width: '100%',
+			border: '1px solid red',
 		});
-		
+
 		$('.side_center').find('div').css({
-			height:'130px',
-			border:'1px solid lightgrey',
-			padding:'30px 0',
+			height: '130px',
+			border: '1px solid lightgrey',
+			padding: '30px 0',
+		})
+
+		$('.side_bottom').css({
+			position: 'absolute',
+			bottom: '0',
+			height: '300px',
+			width: '100%',
+			border: '1px solid red',
+
+		})
+
+		//传入数据
+		function shouye() {
+			$.ajax({
+				url: '../api/index.php',
+				dataType: 'text',
+				success: function(data) {
+						
+					var $mainThreeBrt2 = $('.main_three_brt2').children('a');
+					var $mtbindex = $mainThreeBrt2.length;
+					var data = JSON.parse(data);
+					for(let i=0;i<$mtbindex;i++){
+						$($mainThreeBrt2[i]).html(`
+							<div data-id="${data[i].id}" class="hpimg">
+								<img src="${data[i].img}" />
+								<p>${data[i].name}</p>
+								<div>
+									<span><b>￥${data[i].price}</span>
+									<span class="hpspan2"><del>￥${data[i].oprice}</del></span>
+								</div>
+								<span class="shanghua">加入购物车</span>
+							</div>`);
+					}
+				}
+			})
+		}
+		shouye();
+		
+		$('.main_three_brt2').on('mouseenter',function(){
+			
+			$(this).find('.shanghua').stop().animate({
+				bottom:'0px',
+			})
+		})
+		$('.main_three_brt2').on('mouseleave',function(){
+			
+			$(this).find('.shanghua').stop().animate({
+				bottom:'-35px',
+			})
 		})
 		
-		$('.side_bottom').css({
-			position:'absolute',
-			bottom:'0',
-			height:'300px',
-			width:'100%',
-			border:'1px solid red',
-			
-		})
-	
-	//传入数据
-	
-	
-	
+		
+
 	});
 });

@@ -20,6 +20,60 @@
   vertical-align: auto;
 }
 
+.hpimg {
+  position: relative;
+  overflow: hidden;
+  height: 264px;
+  width: 201px;
+}
+
+.hpimg img {
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}
+
+.hpimg p {
+  text-align: center;
+  height: 20px;
+  width: 197px;
+  font-size: 14px;
+}
+
+.hpimg .shanghua {
+  display: block;
+  position: absolute;
+  background: #FC7309;
+  height: 35px;
+  width: 180px;
+  text-align: center;
+  bottom: -35px;
+  left: 0;
+  color: #FEFEFE;
+  line-height: 35px;
+  opacity: 0.6;
+}
+
+.hpimg div {
+  height: 20px;
+  width: 197px;
+  padding: 5px 10px 0px 10px;
+}
+
+.hpimg div span {
+  color: #FC7309;
+  display: inline-block;
+  width: 70px;
+}
+
+.hpimg div .hpspan2 {
+  width: 40px;
+  color: black;
+  font-size: 13px;
+  padding-left: 30px;
+}
+
 h1,
 h2,
 h3,
