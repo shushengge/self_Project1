@@ -9,7 +9,7 @@
         height: 100%;
         width: 40px;
         right: 0;
-        top: 0;
+//      top: 0;
         background-color: $side;
         z-index: 5;
     }
@@ -199,13 +199,13 @@
         }
 
         .header_container {
-            height: 20px;
+            height: 40px;
             width: 100px;
             position: relative;
             z-index: 99;
 
             .banner {
-                height: 470px;
+//              height: 470px;
                 width: 150px;
                 background: $backColor;
                 left: 0;
@@ -547,6 +547,7 @@
     //底部
     footer {
         //      height: 840px;
+        padding-top: 30px;
         .footer_t {
             height: 120px;
             width: 100%;

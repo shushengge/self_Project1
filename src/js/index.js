@@ -16,8 +16,7 @@ require(['config'], function() {
 				$(".header_b").removeClass("fixed");
 				down = false;
 			}
-		})
-		
+		})		
 		//banner
 		
 //		var $bannerLeft = $('.banner_left');
@@ -32,7 +31,6 @@ require(['config'], function() {
 //			$hasMenu.children('ul').stop().fadeOut();
 			$hasMenu.mouseenter(function(){
 				clearTimeout(timer3);
-				console.log($(this))
 				$(this).siblings().children('ul').stop().fadeOut();
 				var $subMenu = $(this).children('ul');
 				$subMenu.stop().fadeIn();
@@ -171,6 +169,53 @@ require(['config'], function() {
 				$mainLp.addClass('active1').siblings('div').removeClass('active1');
 			}, 2000)
 		}).trigger('mouseleave'); //在每一个匹配的元素上触发某类事件。
-
+		
+		//侧边栏
+		$('.box').append(`<div class="side">
+				<div class="side_center">
+					<span></span>
+					<div><span>购物车</span></div>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="side_bottom">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>`)
+		$('.side').css({
+			height:'$(widow).heigth',
+			top:'$(window).scollTop()',
+				
+		}).children('.side_center').css({
+			position:'absolute',
+			top:'50%',
+			transform:'translate(0,-50%)',
+			height:'300px',
+			width:'100%',
+			border:'1px solid red',
+		});
+		
+		$('.side_center').find('div').css({
+			height:'130px',
+			border:'1px solid lightgrey',
+			padding:'30px 0',
+		})
+		
+		$('.side_bottom').css({
+			position:'absolute',
+			bottom:'0',
+			height:'300px',
+			width:'100%',
+			border:'1px solid red',
+			
+		})
+	
+	//传入数据
+	
+	
+	
 	});
 });

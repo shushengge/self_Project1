@@ -1,4 +1,18 @@
 @charset "UTF-8";
+#goodslist .glt .glt_r {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#goodslist .glt .glt_r .glt_r2 i, #goodslist .glb i {
+  display: inline-block;
+  text-align: center;
+  height: 65px;
+  width: 50px;
+  color: #FC7309;
+}
+
 h1,
 h2,
 h3,
@@ -20,6 +34,87 @@ i {
   /*相对于body固定定位*/
   position: fixed;
   top: -40px;
-  left: 0px;
+  left: 0;
   z-index: 199;
+}
+
+#goodslist .glt {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid lightgray;
+  font-size: 13px;
+}
+
+#goodslist .glt .glt_l {
+  float: left;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#goodslist .glt .glt_l h4 {
+  display: inline-block;
+}
+
+#goodslist .glt .glt_l .priceLU {
+  display: inline-block;
+  height: 40px;
+  background: #FC7309;
+  padding-left: 10px;
+  padding-right: 30px;
+  width: 30px;
+}
+
+#goodslist .glt .glt_l .gtext1 {
+  height: 20px;
+  width: 60px;
+  border: 1px solid lightgray;
+}
+
+#goodslist .glt .glt_r {
+  float: right;
+  width: 673px;
+  height: 40px;
+  border-left: 1px solid lightgray;
+  padding: 0 20px;
+}
+
+#goodslist .glt .glt_r div {
+  float: left;
+}
+
+#goodslist .glt .glt_r div input {
+  border: 1px solid lightgrey;
+  height: 30px;
+  width: 250px;
+}
+
+#goodslist .glt .glt_r .glt_r1 button {
+  height: 32px;
+  width: 60px;
+  background: #FC7309;
+  border-radius: 10px;
+  color: #FEFEFE;
+}
+
+#goodslist .glt .glt_r .glt_r2 i {
+  width: 30px;
+  height: 40px;
+}
+
+#goodslist .glc {
+  height: 500px;
+  width: 100%;
+  border: 1px solid #FC7309;
+}
+
+#goodslist .glb {
+  height: 65px;
+  width: 100%;
+  line-height: 65px;
+  text-align: end;
+}
+
+#goodslist .glb .i3 {
+  color: black;
 }

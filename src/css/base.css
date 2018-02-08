@@ -7,7 +7,7 @@ header{
 	margin: 0 auto;
 }
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
-fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*È¥µôinputµÈ¾Û½¹Ê±µÄÀ¶É«±ß¿ò*/
+fieldset, img,input { border:none; padding:0;margin:0;outline-style:none; }   /*È¥µôinputµÈ¾Û½¹Ê±µÄÀ¶É«±ß¿ò*/
 ul,li { list-style:none; }
 
 select, input { vertical-align:middle;}

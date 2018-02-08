@@ -33,7 +33,7 @@ gulp.task('server',function(){
 	// 启动一个自动刷新的服务器
 	browserSync({
 		//创建一个静态服务器
-		server:'./src',
+//		server:'./src',
 
 		// 指定端口
 		port:1312,
@@ -42,7 +42,7 @@ gulp.task('server',function(){
 		// 用browserSync代理php服务器
 		// 	* 识别php
 		// 	* 自动刷新
-		// proxy:'http://localhost:1312',
+		 proxy:'http://localhost:1312',
 
 		// 监听文件修改
 		files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']

@@ -1,10 +1,82 @@
 @import 'var';
-//header{
-//  .header_container{
-//      .banner{
-//          z-index: 1;
-//          background: red;
-//      }
-//  }
-//}
-//
+#goodslist{
+    .glt{
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+        border: 1px solid lightgray;
+        font-size: 13px;
+           .glt_l{
+               float: left;
+               height:40px;
+               padding-left: 10px;
+               h4{
+                   display: inline-block;
+               }
+               .priceLU{
+                   display: inline-block;
+                   height: 40px;
+                   background: $mainColor;
+                   padding-left: 10px;
+                   padding-right: 30px;
+                   width: 30px;
+               }
+               .gtext1{
+                   height: 20px;
+                   width: 60px;
+                   border: 1px solid lightgray;
+               }
+           }  
+           .glt_r{
+               float: right;
+               width: 673px;
+               height: 40px;
+               @extend %tanxingY;
+               border-left:1px solid lightgray ;
+               padding: 0 20px;
+               div{
+                   float: left;
+                   input{
+                       border: 1px solid lightgrey;
+                       height: 30px;
+                       width: 250px;
+                   }
+                   
+                }
+                .glt_r1{
+                    button{
+                       height: 32px;
+                       width: 60px;
+                       background:$mainColor;
+                       border-radius: 10px;
+                       color: $backColor;
+                   }   
+                }
+                .glt_r2{
+                    i{
+                        @extend %i;
+                        width: 30px;
+                        height: 40px;
+                    }
+                }
+               
+           }
+    }
+    .glc{
+        height: 500px;
+        width: 100%;
+        border: 1px solid $mainColor;
+    }
+    .glb{
+        height: 65px;
+        width: 100%;
+        line-height: 65px;
+        text-align: end;
+        i{
+            @extend %i;
+        }
+        .i3{
+           color: black; 
+        }
+    }
+}

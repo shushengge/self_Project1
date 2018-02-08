@@ -1,0 +1,64 @@
+@import 'var';
+.box{
+    .header{
+        .header_container{
+            .banner{
+                top: 0;
+                .banner_b{
+                    display: none;
+                }
+
+            }
+            .banner:hover .banner_b{display: block;}
+            .newbanner{
+                height: 39px;
+//              width:100%;
+                padding-left: 150px;
+                ul{
+//                  width: 400px;
+                    padding-left: 20px;
+                    border-bottom: 1px solid $mainColor;
+                    line-height: 40px;
+                    li{
+                        float: left;
+                        padding-left: 20px;
+                        width: 100px;
+                        height: 39px;
+                    }
+                    li:hover{
+                        color:$mainColor;                    
+                    }
+                }
+            }
+        }
+    }
+    #shopCar{
+        height: 800px;
+        margin-top:10px ;
+        padding-top: 50px;
+
+        .shop_car{
+            width: 100%;
+            min-height: 400px;
+            padding: 0 10px;
+//          .car_top{
+                ul{
+                    line-height: 50px;
+                    text-align: center;
+                    height: 50px;
+                    border-bottom: 1px solid gray;
+                    li{
+                        float: left;
+                        height: 50px;
+                        width: 120px;
+                    }
+                    .car_top1{
+                        width: 600px;
+                        text-align: left;
+                    }
+                    
+                }
+//          }
+        }
+    }
+}

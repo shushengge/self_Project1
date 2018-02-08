@@ -13,18 +13,14 @@
 
 
 	// 获取查询结果
-	$result = $conn->query($sql);
-	// if($result->num_rows>0){
-	// 	echo 'ok';
-	// }else{
-	// 	echo 'fail';
-	// }
-
+	$data = $conn->query($sql);
 
 	//print_r($row[0]);
 
 
-	if($result->num_rows > 0){
+	if($data->num_rows > 0){
+		// 密码md5加密
+	$password = md5($password);
 		echo 'success';
 	}else{
 		echo 'fail';

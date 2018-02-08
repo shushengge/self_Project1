@@ -138,27 +138,30 @@ require(['config'], function() {
 			var vall = val1 + val2 + val3 ;
 			console.log(val3);
 			if(vall == 0){
+				console.log(666);
 				$.ajax({
-					url:'../mysql/enroll.php',
+					url:'../api/enroll.php',
 					data:{
 						username:$('.phone').val(),
 						password:$('#mima1').val()
 					},
+					dataType:'text',
 					success:function(data){
+						console.log(data)
 						if(data === 'success'){
-							location.href = 'login.html';
+							location.href = '../html/login.html';
 						}else if(data === 'fail'){
 							alert(444)
 						}
 					}
-				});				
+				});	
+//				$.get('../mysql/enroll.php',{username:$('.phone').val(),password:$('#mima1').val()},function(data){
+//					console.log(data)
+//				},'text')
 			}else{
 				alert('未注册成功，请重新注册！');
-			}
-				
-			});
-		
-
+			}	
+		});
 	});
 
 });

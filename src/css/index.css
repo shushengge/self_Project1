@@ -41,7 +41,7 @@ i {
   /*相对于body固定定位*/
   position: fixed;
   top: -40px;
-  left: 0px;
+  left: 0;
   z-index: 199;
 }
 
@@ -222,7 +222,6 @@ i {
   height: 100%;
   width: 40px;
   right: 0;
-  top: 0;
   background-color: #000000;
   z-index: 5;
 }
@@ -420,14 +419,13 @@ i {
 }
 
 .box header .header_container {
-  height: 20px;
+  height: 40px;
   width: 100px;
   position: relative;
   z-index: 99;
 }
 
 .box header .header_container .banner {
-  height: 470px;
   width: 150px;
   background: #FEFEFE;
   left: 0;
@@ -750,6 +748,10 @@ i {
 
 .box main .container .main_six .main_four .main_three_b .main_three_br .main_four_r {
   width: 231px;
+}
+
+.box footer {
+  padding-top: 30px;
 }
 
 .box footer .footer_t {

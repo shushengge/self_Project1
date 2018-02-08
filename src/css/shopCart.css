@@ -1,0 +1,89 @@
+@charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.fixed {
+  /*相对于body固定定位*/
+  position: fixed;
+  top: -40px;
+  left: 0;
+  z-index: 199;
+}
+
+.box .header .header_container .banner {
+  top: 0;
+}
+
+.box .header .header_container .banner .banner_b {
+  display: none;
+}
+
+.box .header .header_container .banner:hover .banner_b {
+  display: block;
+}
+
+.box .header .header_container .newbanner {
+  height: 39px;
+  padding-left: 150px;
+}
+
+.box .header .header_container .newbanner ul {
+  padding-left: 20px;
+  border-bottom: 1px solid #FC7309;
+  line-height: 40px;
+}
+
+.box .header .header_container .newbanner ul li {
+  float: left;
+  padding-left: 20px;
+  width: 100px;
+  height: 39px;
+}
+
+.box .header .header_container .newbanner ul li:hover {
+  color: #FC7309;
+}
+
+.box #shopCar {
+  height: 800px;
+  margin-top: 10px;
+  padding-top: 50px;
+}
+
+.box #shopCar .shop_car {
+  width: 100%;
+  min-height: 400px;
+  padding: 0 10px;
+}
+
+.box #shopCar .shop_car ul {
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.box #shopCar .shop_car ul li {
+  float: left;
+  height: 50px;
+  width: 120px;
+}
+
+.box #shopCar .shop_car ul .car_top1 {
+  width: 600px;
+  text-align: left;
+}

@@ -21,6 +21,14 @@ $backColor: #FEFEFE;
     text-align: center;
     vertical-align: auto;
 }
+%i {
+    display: inline-block;
+    text-align: center;
+    height: 65px;
+    width: 50px;
+//  @extend %b;
+    color: $mainColor;
+}
 h1,
 h2,
 h3,
@@ -37,14 +45,13 @@ i {
 }
 
 //吸顶菜单
-.fixed{
+.fixed {
     /*相对于body固定定位*/
     position: fixed;
     top: -40px;
-    left: 0px;
+    left: 0;
     z-index: 199;
 }
-
 
 //main
 %main {
@@ -156,9 +163,9 @@ i {
 %main2 {
     .main_four {
         @extend %main;
-        .main_three_t{
+        .main_three_t {
             height: 219px;
-            img{
+            img {
                 height: 219px;
             }
         }
