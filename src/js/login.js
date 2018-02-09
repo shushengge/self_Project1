@@ -84,8 +84,6 @@ require(['config'], function() {
 			var oValue = $("#in1").val().toUpperCase();
 
 			var $i = $('.inyanzheng').find('i');
-			console.log($i)
-			//       $("#in1").next().html(""); 
 			if(oValue == "") {
 
 				$i.css({
@@ -117,7 +115,7 @@ require(['config'], function() {
 						password: $('#password').val()
 					},
 					dataType: 'text',
-					success: function(data) {
+					success:function(data) {
 						console.log(data);
 						if(data === 'success') {
 							location.href = '../html/index.html';

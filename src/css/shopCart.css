@@ -113,7 +113,7 @@ i {
 }
 
 .box #shopCar {
-  height: 800px;
+  height: 530px;
   margin-top: 10px;
   padding-top: 50px;
 }
@@ -140,4 +140,42 @@ i {
 .box #shopCar .shop_car ul .car_top1 {
   width: 600px;
   text-align: left;
+}
+
+.box #shopCar .shop_car ul img {
+  height: 80px;
+  width: 80px;
+  border: 1px solid lightgray;
+  margin-left: 20px;
+}
+
+.box #shopCar .shop_car ul p {
+  line-height: 52px;
+  height: 52px;
+}
+
+.box #shopCar .shop_car ul span:hover {
+  color: forestgreen;
+}
+
+.box #shopCar .shop_car .shoplist {
+  height: 103px;
+  line-height: 103px;
+}
+
+.box #shopCar .shop_car .shoplist li {
+  height: 104px;
+}
+
+.box #shopCar .shop_car .shoplist li div {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border: 1px solid lightgrey;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.box #shopCar .shop_car .shoplist li button {
+  vertical-align: middle;
 }

@@ -33,7 +33,7 @@
         }
     }
     #shopCar{
-        height: 800px;
+        height: 530px;
         margin-top:10px ;
         padding-top: 50px;
 
@@ -55,6 +55,40 @@
                     .car_top1{
                         width: 600px;
                         text-align: left;
+                    }
+                    img{
+                        height: 80px;
+                        width: 80px;
+                        border:1px solid lightgray;
+                        margin-left: 20px;
+                    }
+                    p{
+                        line-height: 52px;
+                        height: 52px;
+                    }
+                    span:hover{
+                        color:forestgreen;
+                    }
+                   
+                }
+                .shoplist{
+                    height: 103px;
+                    line-height: 103px;
+                    li{
+                        height: 104px;
+                        
+                         div{
+                            display: inline-block;
+                            width: 50px;
+                            height: 20px;
+                            border: 1px solid lightgrey;
+                            vertical-align:middle;
+                            line-height: 20px;
+                        }
+                        button{
+                            vertical-align: middle;
+                        }
+                        
                     }
                     
                 }

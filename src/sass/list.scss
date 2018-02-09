@@ -67,10 +67,31 @@
                }
         }
         .glc{
-//          height: 1510px;
             min-height: 300px;
             width: 100%;
-            border: 1px solid $mainColor;
+            border: 1px solid lightgrey;
+            .goods{
+                float: left;
+                margin: 10px 10px;
+                height: 345px;
+                width: 220px;
+                border: 1px solid lightgrey;
+                
+                img{
+                    height: 218px;
+                    width: 220px;
+                }
+                div{
+                    padding-top: 20px;
+                    display: inline-block;
+                    height: 30px;
+                    width: 50px;
+                }
+                .s1{
+                    width: 150px;
+                    text-align: right;
+                }
+            }
         }
         .glb{
             height: 65px;

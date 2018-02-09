@@ -8,7 +8,7 @@
 	// 判断用户名是否存在
 	$data = $conn->query("select * from user where username='$username'");
 	
-
+	
 	if($data->num_rows == 0){
 		// 密码md5加密
 		$password = md5($password);
@@ -23,5 +23,5 @@
 		}else{
 			echo "fail";
 		};
-	};
+	}
 ?>

@@ -159,7 +159,32 @@ i {
 #goodslist .glcontainer .glc {
   min-height: 300px;
   width: 100%;
-  border: 1px solid #FC7309;
+  border: 1px solid lightgrey;
+}
+
+#goodslist .glcontainer .glc .goods {
+  float: left;
+  margin: 10px 10px;
+  height: 345px;
+  width: 220px;
+  border: 1px solid lightgrey;
+}
+
+#goodslist .glcontainer .glc .goods img {
+  height: 218px;
+  width: 220px;
+}
+
+#goodslist .glcontainer .glc .goods div {
+  padding-top: 20px;
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+}
+
+#goodslist .glcontainer .glc .goods .s1 {
+  width: 150px;
+  text-align: right;
 }
 
 #goodslist .glcontainer .glb {

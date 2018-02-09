@@ -1,0 +1,15 @@
+@import 'var';
+main{
+    margin-top: 60px;
+    .main_t{
+        .main_tl{
+            width: 485px;
+            height: 485px;
+            border:1px solid lightgray;
+            img{
+                height: 485px;
+                width:485px;
+            }
+        }
+    }
+}
