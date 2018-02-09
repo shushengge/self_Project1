@@ -20,7 +20,7 @@
 		echo 'fail';
 	}
 	// 释放查询内存
-	$result->free();
+	// $result->free();
 
 	//关闭连接
 	$conn->close();

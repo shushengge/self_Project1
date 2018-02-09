@@ -9,14 +9,16 @@ require(['config'], function() {
 			},
 			dataType: 'json',
 			success: function(data) {
+				console.log(data);
 				$dimg = `<img src="../img/${data.img}.jpg" />`;
 				$maintl.html($dimg);
-			},
+				$maintl.llZoom({
+					position:'right'
+				})
+			}
 		});
 		
-		$maintl.llZoom({
-			position:'right'
-		})
+		
 		
 		
 	});

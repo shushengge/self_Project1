@@ -118,8 +118,8 @@ require(['config'], function() {
 					success:function(data) {
 						console.log(data);
 						if(data === 'success') {
-							location.href = '../html/index.html';
-						} else if(data === 'fail') {
+							location.href = '../index.html';
+						} else if(data === 'fail'){
 							alert(444)
 						}
 					}
